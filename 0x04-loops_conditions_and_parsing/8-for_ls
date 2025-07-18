@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# List non-hidden files/directories; print part after first dash if it exists, else whole name
+
+for file in *; do
+  if [[ "$file" == *-* ]]; then
+    echo "${file#*-}"
+  else
+    echo "$file"
+  fi
+done
