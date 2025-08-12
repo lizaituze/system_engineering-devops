@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# This script displays the PIDs of all running processes
-ps -eo pid
