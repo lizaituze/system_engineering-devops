@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Prints "To infinity and beyond" every 2 seconds and prints OK on SIGTERM without exiting
+
+trap 'echo OK' SIGTERM
+
+while true; do
+  echo "To infinity and beyond"
+  sleep 2
+done
